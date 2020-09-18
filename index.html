@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+
+<html>
+<head >
+ <!--font awesome-->
+<script src="https://kit.fontawesome.com/36a1a3adff.js" crossorigin="anonymous" >
+ 
+</script>
+<meta name = "viewport"  content="width= device-width, initial-scale= 1.0">
+
+  <style>
+        .like{
+        display: flex;
+flex-wrap: wrap; 
+width: 80px;
+padding: 0px;
+
+     
+}
+
+.like > .disp { 
+ flex: 1 ; 
+
+ 
+}
+.click-me{
+display: flex;
+flex-wrap: wrap;
+width: 100px;
+}
+
+.click-me > #demo{
+flex: 1;
+}
+
+.circle{
+margin: 0 auto;
+padding: 35px;
+text-align: center;
+border-radius: 50%;
+border: 2px solid black;
+width: 160px;
+height: 160px;
+background-color: lightblue;
+box-shadow: 2px 5px 20px  indigo;
+}
+
+.caption{
+background-color: #000000;
+color: white;
+box-shadow: 2px 5px 20px  indigo;
+text-align: center;
+padding: px;
+height: 30px;
+}
+ </style>
+ </head>
+          
+
+   
+
+<body>
+
+<div class="circle">
+<p>Programming,  is difficult, 
+ but it results it always fruitful . 
+ It requires patients,  
+ perseverance, commitments, 
+ endurance and above all, 
+ sacrifice to succeed .
+ 
+ </p> 
+</div>
+
+<div class="caption">
+ <p>Design by: Thinkers' Point</p>
+ </div>
+ <hr>
+ 
+<div class="like" >
+ 
+<h2 class="disp">0</h2>
+<h4 class="disp">Likes</h4>
+
+ </div>
+    
+    <hr>
+ <div class="click-me">
+ <h3 id="demo">
+  
+<a class="btn-floating btn-sm rgba-white-slight mx-1 " href="#">
+ <i class=" fa fa-thumbs-up fa-2x"></i>
+</a>
+  </h3>
+
+  
+  </div>
+ <hr>
+<script>
+
+var btn = document.getElementById("demo")
+var disp = document.querySelector(".disp")
+var dispDate = document.querySelector(".dispDate");
+    
+/*    function myFunct(){
+return dispDate.textContent = Date();
+}*/
+
+ var c = 0;
+function counter() {
+        
+        c += 1 ;
+return disp.textContent = c;
+       
+
+}
+
+
+    btn.onclick = function() {
+         
+         counter();
+
+};
+</script>
+
+</body>
+</html>
+
